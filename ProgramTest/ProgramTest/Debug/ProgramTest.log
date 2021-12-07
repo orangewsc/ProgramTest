@@ -1,4 +1,4 @@
-﻿生成启动时间为 2021/11/9 10:48:22。
+﻿生成启动时间为 2021/12/7 17:07:18。
      1>项目“E:\VS2013\ProgramTest\ProgramTest\ProgramTest\ProgramTest.vcxproj”在节点 2 上(Build 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(355,5): warning MSB8003: Could not find WindowsSDKDir variable from the registry.  TargetFrameworkVersion or PlatformToolset may be set to an invalid version number.
      1>ClCompile:
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:01.74
+已用时间 00:00:01.88

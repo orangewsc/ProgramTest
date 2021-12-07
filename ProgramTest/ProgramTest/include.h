@@ -28,6 +28,28 @@ void threadFunc(int num)
 	}
 }
 
+
+void threadFunc2()
+{
+	cout << "直接运行了：" << endl;
+}
+
+class wsc
+{
+public:
+	wsc() :m_t(std::bind(&wsc::threadFunc2, this))
+	{
+	}
+	thread m_t;
+
+	void threadFunc2()
+	{
+		cout << "类初始化列表里的线程直接运行了：" << endl;
+	}
+};
+
+
+
 template<typename Tobject,typename Tparam>
 class  CCallbackProxy
 {
