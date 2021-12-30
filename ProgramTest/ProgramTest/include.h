@@ -34,6 +34,24 @@ void threadFunc2()
 	cout << "直接运行了：" << endl;
 }
 
+void threadFunc3(int num, int &g_num)
+{
+	Sleep(5000);
+	g_num = num;
+	cout << "周期调度" << num<<": "<<g_num<< endl;
+}
+
+
+void runnable1(int g_num)
+{
+	for (int i = 0; i < 5; i++)            //这里的方法是为了验证多个调用方在调用同一个回调函数时，使用多线程可以解决阻塞问题。
+	{
+		Sleep(1000);
+		thread t3(threadFunc3, i, g_num);
+		t3.detach();
+	}
+}
+
 class wsc
 {
 public:
